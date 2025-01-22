@@ -52,5 +52,5 @@ jobs:
         )
         
         # Call your PowerShell script here with the parameters
-        .\Deploy-AKS.ps1 -AksName $AksName -SubscriptionId $SubscriptionId -ResourceGroupName $ResourceGroupName -VNetResourceId $VNetResourceId -NodePool1Name $NodePool1Name -NodePool1Nodes $NodePool1Nodes -NodePool1NetworkType $NodePool1NetworkType -NodePool1Pods $NodePool1Pods -NodePool2Name $NodePool2Name -NodePool2Nodes $NodePool2Nodes -NodePool2NetworkType $NodePool2NetworkType -NodePool2Pods $NodePool2Pods -ClusterType $ClusterType -RBACType $RBACType -AdminUsers $AdminUsers -UserGroups $UserGroups
+        .\aks_deployment.ps1 -AksName $AksName -SubscriptionId $SubscriptionId -ResourceGroupName $ResourceGroupName -VNetResourceId $VNetResourceId -NodePool1Name $NodePool1Name -NodePool1Nodes $NodePool1Nodes -NodePool1NetworkType $NodePool1NetworkType -NodePool1Pods $NodePool1Pods -NodePool2Name $NodePool2Name -NodePool2Nodes $NodePool2Nodes -NodePool2NetworkType $NodePool2NetworkType -NodePool2Pods $NodePool2Pods -ClusterType $ClusterType -RBACType $RBACType -AdminUsers $AdminUsers -UserGroups $UserGroups
       displayName: 'Deploy AKS Cluster'
